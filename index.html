@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="images/icons/Instagram-Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <!-- navbar with bg color tertiary -->
+    <nav class="navbar bg-body-tertiary">
+         <!-- styles navbar with flex and row features -->
+        <div class="container-fluid d-flex flex-row justify-content-between">
+            <!-- styles navbar with margins -->
+            <div class="ms-5 mt-2 mb-2">
+                 <!-- styles navbar branding with instagram and logo -->
+                <a class="navbar-brand d-flex align-items-center" href="">
+                    <!-- svg from svg repo -->
+                  <svg height="32px" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 551.034 551.034" xml:space="preserve" fill="#000000" stroke="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier"> <g id="XMLID_13_"> <linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.5714" x2="275.517" y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)"> 
+                        <stop offset="0" style="stop-color:#"></stop> <stop offset="0.3" style="stop-color:#"></stop> 
+                        <stop offset="0.6" style="stop-color:#21975"></stop> 
+                        <stop offset="1" style="stop-color:#"></stop> </linearGradient> 
+                        <path id="XMLID_17_" style="fill:url(#XMLID_2_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722 c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156 C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156 c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722 c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"></path> 
+                        <linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.5714" x2="275.517" y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)"> 
+                        <stop offset="0" style="stop-color:#"></stop> <stop offset="0.3" style="stop-color:#"></stop> <stop offset="0.6" style="stop-color:#21975"></stop>
+                         <stop offset="1" style="stop-color:#"></stop> </linearGradient> 
+                         <path id="XMLID_81_" style="fill:url(#XMLID_3_);" d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z"></path> 
+                         <linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="418.306" y1="4.5714" x2="418.306" y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)">
+                             <stop offset="0" style="stop-color:#"></stop> 
+                             <stop offset="0.3" style="stop-color:#"></stop> 
+                             <stop offset="0.6" style="stop-color:#21975"></stop> 
+                             <stop offset="1" style="stop-color:#"></stop> 
+                        </linearGradient>
+                        <circle id="XMLID_83_" style="fill:url(#XMLID_4_);" cx="418.306" cy="134.072" r="34.149"></circle> 
+                    </g> </g></svg>
+                    <span class="ms-2 fw-semibold">Instagram</span>
+                </a>
+            </div>
+            <div class="me-4 mt-2 mb-2">
+
+                <!-- Button trigger modal for post creation -->
+                <button type="button" class="btn btn-success me-4" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Create a new post
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1"
+                                        class="form-label fw-semibold">Caption:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"
+                                        placeholder="Add the caption of your post here"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-light">
+                                    <svg width="16px" height="16px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                        <g id="SVGRepo_iconCarrier"> 
+                                            <path d="M0 0h48v48H0z" fill="none"></path> 
+                                        <g id="Shopicon"> 
+                                            <path d="M40,14h-7.34l-3.464-6H18.804l-3.464,6H8c-2.2,0-4,1.8-4,4v18c0,2.2,1.8,4,4,4h32c2.2,0,4-1.8,4-4V18 C44,15.8,42.2,14,40,14z M24,32c-3.314,0-6-2.686-6-6s2.686-6,6-6s6,2.686,6,6S27.314,32,24,32z">
+                                        </path> </g> </g>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-light">
+                                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                        <g id="SVGRepo_iconCarrier"> 
+                                            <path fill="#231F20" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"></path> 
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- button group for dropdown menu -->
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle me-5" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <svg fill="currentColor" width="16px" height="16px" viewBox="0 0 52 52" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M32.26,52a2.92,2.92,0,0,1-2.37-1.21l-3.48-4.73h-.82L22.11,50.8a2.93,2.93,0,0,1-3.5,1L13,49.45a2.93,2.93,0,0,1-1.78-3.17l.89-5.8-.59-.59-5.8.89A2.93,2.93,0,0,1,2.55,39L.23,33.39a2.92,2.92,0,0,1,1-3.5l4.73-3.48v-.82L1.21,22.11a2.92,2.92,0,0,1-1-3.5L2.55,13a2.93,2.93,0,0,1,3.17-1.78l5.8.89.59-.59-.89-5.8A2.93,2.93,0,0,1,13,2.55L18.61.23a2.93,2.93,0,0,1,3.5,1l3.48,4.74h.82l3.48-4.73a2.93,2.93,0,0,1,3.5-1L39,2.55a2.93,2.93,0,0,1,1.78,3.17l-.89,5.8.59.59,5.8-.89A2.93,2.93,0,0,1,49.45,13l2.32,5.61a2.92,2.92,0,0,1-1,3.5l-4.73,3.48v.82l4.73,3.48a2.92,2.92,0,0,1,1,3.5L49.45,39a2.93,2.93,0,0,1-3.17,1.78l-5.8-.89-.59.59.89,5.8A2.93,2.93,0,0,1,39,49.45l-5.61,2.32A2.82,2.82,0,0,1,32.26,52Zm-17-5.93,4.09,1.69,3.3-4.49a2.94,2.94,0,0,1,2.37-1.21H27a3,3,0,0,1,2.37,1.2l3.3,4.5,4.09-1.69-.85-5.51A3,3,0,0,1,36.68,38L38,36.69a3,3,0,0,1,2.53-.83l5.51.85,1.69-4.09-4.49-3.3A2.94,2.94,0,0,1,42.06,27v-1.9a2.94,2.94,0,0,1,1.21-2.37l4.49-3.3L46.07,15.3l-5.51.84A3,3,0,0,1,38,15.31L36.69,14a3,3,0,0,1-.83-2.53l.85-5.51L32.62,4.24l-3.3,4.5A3,3,0,0,1,27,9.94h-1.9a2.94,2.94,0,0,1-2.37-1.21l-3.3-4.49L15.29,5.93l.85,5.51A3,3,0,0,1,15.31,14L14,15.31a3,3,0,0,1-2.53.83L5.93,15.3,4.24,19.38l4.49,3.3a2.94,2.94,0,0,1,1.21,2.37V27a2.94,2.94,0,0,1-1.21,2.37l-4.49,3.3,1.69,4.09,5.51-.85a2.94,2.94,0,0,1,2.53.83L15.31,38a2.94,2.94,0,0,1,.83,2.53Zm31.6-30.9Zm-.31-2h0ZM26,38A12,12,0,1,1,38,26,12,12,0,0,1,26,38Zm0-20a8,8,0,1,0,8,8A8,8,0,0,0,26,18Z"></path></g></svg>
+
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-sm-end me-5">
+                        <li><button class="dropdown-item" type="button">Profile</button></li>
+                        <li><button class="dropdown-item" type="button">Accessibility</button></li>
+                        <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><button class="dropdown-item link-danger" type="button">Log out</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="mt-2">
+        <!-- grid/square tabs -->
+        <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-tab-pane"
+                    type="button" role="tab" aria-controls="grid-tab-pane" aria-selected="true"
+                    onclick="changeColor(this.id)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grid-3x3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z" />
+                    </svg>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="square-tab" data-bs-toggle="tab" data-bs-target="#square-tab-pane"
+                    type="button" role="tab" aria-controls="square-tab-pane" aria-selected="false"
+                    onclick="changeColor(this.id)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-square-fill" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <!-- creates the grid feed  -->
+        <div class="tab-content m-2" id="myTabContent">
+            <div class="tab-pane fade show active" id="grid-tab-pane" role="tabpanel" aria-labelledby="grid-tab"
+                tabindex="0">
+                <div class="row row-cols-3 g-2">
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/dog.jpg" class="img-fluid"
+                                alt="Image of dog">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/hearts.jpg" class="img-fluid"
+                                alt="Image of the candy cane heart">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/paintedhands.jpg" class="img-fluid"
+                                alt="Image of a boy with painted hands">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/beach.jpg"
+                                class="img-fluid" alt="Image of the beach">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/wildflowers.jpg"
+                                class="img-fluid" alt="Image of wildflowers">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/robotchopping.jpg" class="img-fluid"
+                                alt="Image of robot cutting veggies">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/brunch.jpg" class="img-fluid"
+                                alt="Image of a brunch at cafe">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/fighting.jpg" class="img-fluid"
+                                alt="Image of a couple fighting">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/friends.jpg" class="img-fluid"
+                                alt="Image of a friend group">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/guitar.jpg" class="img-fluid"
+                                alt="Image of a man playing guitar">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/walking.jpg" class="img-fluid"
+                                alt="Image of a man walking">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/scuba.jpg" class="img-fluid"
+                                alt="Image of an group of scuba divers in the sea">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="square-tab-pane" role="tabpanel" aria-labelledby="square-tab" tabindex="0">
+                <div class="row row-cols-1 g-2">
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">Dog</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>11/01</small></h6>
+                                </div>
+                                <img src="images/dog.jpg" class="img-fluid square-img"
+                                alt="Image of the dog">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">6369 Likes</span>
+                                    <br>
+                                    Image of the dog
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">Valentine</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>11/01</small></h6>
+                                </div>
+                                <img src="images/hearts.jpg" class="img-fluid square-img"
+                                alt="Image of the candy cane heart">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">6369 Likes</span>
+                                    <br>
+                                    Image of the candy cane heart
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">The perfect flowers</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>10/23</small></h6>
+                                </div>
+                                <img src="images/wildflowers.jpg"
+                                class="img-fluid" alt="Image of wildflowers">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">4193 Likes</span>
+                                    <br>
+                                    Image of a beautiful wildflowers landscape
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">The Robot</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>10/12</small></h6>
+                                </div>
+                                <img src="images/robotchopping.jpg" class="img-fluid"
+                                alt="Image of robot cutting veggies">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">4540 Likes</span>
+                                    <br>
+                                    Image of robot cutting veggies
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">My brunch</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>09/27</small></h6>
+                                </div>
+                                <img src="images/brunch.jpg" class="img-fluid"
+                                alt="Image of a brunch at cafe">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">1353 Likes</span>
+                                    <br>
+                                    Image of my brunch 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">Couple Fighting</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>09/14</small></h6>
+                                </div>
+                                <img src="images/fighting.jpg" class="img-fluid"
+                                alt="Image of a couple fighting">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">1901 Likes</span>
+                                    <br>
+                                    Image of couple fighting
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">My friends</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>09/01</small></h6>
+                                </div>
+                                <img src="images/friends.jpg" class="img-fluid"
+                                alt="Image of a friend group">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">9449 Likes</span>
+                                    <br>
+                                    Image of my friend group
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">Come on, let's play guitar!!!</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>08/29</small></h6>
+                                </div>
+                                <img src="images/guitar.jpg" class="img-fluid"
+                                alt="Image of a man playing guitar">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">2153 Likes</span>
+                                    <br>
+                                    Image of man playing guitar
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">Painted Hands</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>08/04</small></h6>
+                                </div>
+                                <img src="images/paintedhands.jpg" class="img-fluid square-img"
+                                alt="Image of a boy with painted hands">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">1397 Likes</span>
+                                    <br>
+                                    Image of boy with painted hands
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">My walk</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>07/29</small></h6>
+                                </div>
+                                <img src="images/walking.jpg" class="img-fluid"
+                                alt="Image of a man walking">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">1635 Likes</span>
+                                    <br>
+                                    Image of man walking
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">Scuba vs Snorkel</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>07/19</small></h6>
+                                </div>
+                                <img src="images/scuba.jpg" class="img-fluid"
+                                alt="Image of an group of scuba divers in the sea">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">9017 Likes</span>
+                                    <br>
+                                    Image of group of scubadivers
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-body px-0 py-2">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title ps-2">my friends</h5>
+                                    <h6 class="card-subtitle text-body-secondary pe-2"><small>07/05</small></h6>
+                                </div>
+                                <img src="images/friends.jpg" class="img-fluid"
+                                alt="Image of a friend group">
+                                <p class="card-text p-2">
+                                    <span class="fw-bold">6983 Likes</span>
+                                    <br>
+                                    Image of a friend group
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
